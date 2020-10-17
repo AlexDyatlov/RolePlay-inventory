@@ -104,7 +104,7 @@
   &:hover{
     color: #20222f;
     &::before{
-      height: 400%;
+      height: 430%;
     }
   }
 }
@@ -115,7 +115,6 @@
   transform: translate(-50%,-50%);
   width: 559px;
   height: 550px;
-  padding: 0 53px;
   background: #26293a;
   border-radius: 25px;
   text-align: center;
@@ -123,12 +122,13 @@
 .first__item{
   padding: 113px 0;
   &-img{
-    width: 198px;
+    width: auto;
     height: 256px;
   }
   &-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 23px;
     width: 200px;
     margin: 35px auto 0;
