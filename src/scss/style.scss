@@ -48,12 +48,64 @@
   background: #26293a;
   border-radius: 25px;
   &-btn{
-    background: #20222f;
-    padding: 14px 0 18px;
-    display: block;
-    border-radius: 25px;
-    color: #f4f4f4;
     width: 100%;
+    color: #f4f4f4;
+    padding: 14px 0 18px;
+    background: #20222f;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: 1s all ease;
+    cursor: pointer;
+    &::before{
+      content: '';
+      position: absolute;
+      background: #0bf1ff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+  }
+}
+.close-menu{
+  position: absolute;
+  right: 0;
+  top: -45px;
+  width: 264px;
+  height: 66px;
+  color: #838590;
+  background: #20222f;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 1s all ease;
+   &::before{
+    content: '';
+    position: absolute;
+    background: #0bf1ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+}
+.btn{
+  z-index: 5;
+  &::before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:hover{
+    color: #20222f;
+    &::before{
+      height: 400%;
+    }
   }
 }
 .content__item{
@@ -88,10 +140,16 @@
   &-btn{
     height: 31px;
     width: 101px;
-    background: #0bf1ff;
+    background: #20222f;
     border: none;
     border-radius: 25px;
-    color: #26293a;
+    color: #f4f4f4;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      background: #0bf1ff;
+      color: #26293a;
+    }
   }
 }
 .second__item{
@@ -110,19 +168,28 @@
     margin-bottom: 10px;
     text-transform: uppercase;
   }
+  &-name{
+    width: 112px;
+    text-align: left;
+  }
   &-price{
     color: #f4f4f4;
-    margin-left: 85px;
+    margin-left: 60px;
   }
   &-btn{
     button{
       height: 30px;
-      background: #0bf1ff;
+      background: #20222f;
+      color: #f4f4f4;
       border: none;
       border-radius: 25px;
-      color: #26293a;
       padding: 0 15px;
       cursor: pointer;
+      transition: all .4s;
+      &:hover{
+        background: #0bf1ff;
+        color: #26293a;
+      }
     }
   }
 }
@@ -152,11 +219,16 @@
       width: 92px;
       height: 20px;
       font-size: 16px;
-      color: #3a3a3b;
-      background: #0bf1ff;
+      background: #20222f;
+      color: #f4f4f4;
       border: none;
       border-radius: 25px;
       cursor: pointer;
+      transition: all .4s;
+      &:hover{
+        background: #0bf1ff;
+        color: #3a3a3b;
+      }
     }
   }
 }
@@ -182,6 +254,17 @@
   }
 }
 // end rangeSlider
+.inventory__item-btn.active{
+  background: #0bf1ff;
+  color: #20222f;
+}
+.tabs-content{
+  display: none;
+}
+.tabs-content.active-tab{
+  display: block;
+}
+
 
 
 

@@ -20,115 +20,219 @@
         <div class="inventory__items tabs-wrapper">
           <div class="grid-1 inventory__item">
             <img class="inventory__item-img" src="images/icons/icon-1.png" alt="">
-            <a class="tab inventory__item-btn" href="#tab-1">პისტოლეტი</a>
+            <a class="tab inventory__item-btn btn" data-id="1">პისტოლეტი</a>
           </div>
-          <div class="grid-2 inventory__item">
+          <div class="grid-2 inventory__item ">
             <img class="inventory__item-img" src="images/icons/icon-2.png" alt="">
-            <a class="tab inventory__item-btn" href="#tab-2">ავტომატური</a>
+            <a class="tab inventory__item-btn btn" data-id="2">ავტომატური</a>
           </div>
-          <div class="grid-3 inventory__item">
+          <div class="grid-3 inventory__item ">
             <img class="inventory__item-img" src="images/icons/icon-3.png" alt="">
-            <a class="tab inventory__item-btn" href="#tab-3">პისტოლეტი</a>
+            <a class="tab inventory__item-btn btn" data-id="3">პისტოლეტი</a>
           </div>
           <div class="grid-4 inventory__item">
             <img class="inventory__item-img" src="images/icons/icon-4.png" alt="">
-            <a class="tab inventory__item-btn" href="#tab-4">ბრონიჟილეტი</a>
+            <a class="tab inventory__item-btn btn active" data-id="4">ბრონიჟილეტი</a>
           </div>
           <div class="grid-5 inventory__item">
             <img class="inventory__item-img" src="images/icons/icon-5.png" alt="">
-            <a class="tab inventory__item-btn" href="#tab-5">ტყვიები</a>
+            <a class="tab inventory__item-btn btn" data-id="5">ტყვიები</a>
           </div>
         </div>
         <div class="inventory__content">
-          <!-- <div id="tab-1" class="tabs-content">
-            <div class="first__item content__item">
-              <img class="first__item-img" src="images/icons/icon-4.png" alt="">
-              <div class="first__item-box">
-                <p class="first__item-text">500M</p>
-                <button class="first__item-btn">ყიდვა</button>
+          <div id="1" class="tabs-content">
+            <form>
+              <div class="second__item content__item">
+                <div class="second__item-line">
+                  <label class="second__item-title">დასახელება</label>
+                  <label class="second__item-title">ფასი</label>
+                  <label class="second__item-title">დამზადება</label>
+                </div>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">PISTOL</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">PISTOL</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">PISTOL</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">PISTOL</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>  -->
-         <!-- <div id="tab-4" class="tabs-content">
-            <div class="second__item content__item">
-              <div class="second__item-line">
-                <label class="second__item-title">დასახელება</label>
-                <label class="second__item-title">ფასი</label>
-                <label class="second__item-title">დამზადება</label>
+            </form>
+          </div>
+          <div id="2" class="tabs-content">
+            <form>
+              <div class="second__item content__item">
+                <div class="second__item-line">
+                  <label class="second__item-title">დასახელება</label>
+                  <label class="second__item-title">ფასი</label>
+                  <label class="second__item-title">დამზადება</label>
+                </div>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SMG</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SMG</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SMG</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SMG</div>
+                    <div class="second__list-price">200$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul class="second__list">
-                <li class="second__list-item">
-                  <div class="second__list-name">PISTOL</div>
-                  <div class="second__list-price">200$</div>
-                  <div class="second__list-btn">
-                    <button type="submit">დამზადება</button>
+            </form>
+          </div>
+          <div id="3" class="tabs-content">
+            <form>
+              <div class="second__item content__item">
+                <div class="second__item-line">
+                  <label class="second__item-title">დასახელება</label>
+                  <label class="second__item-title">ფასი</label>
+                  <label class="second__item-title">დამზადება</label>
+                </div>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SHOTGUN</div>
+                    <div class="second__list-price">300$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SHOTGUN</div>
+                    <div class="second__list-price">300$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SHOTGUN</div>
+                    <div class="second__list-price">300$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="second__list">
+                  <li class="second__list-item">
+                    <div class="second__list-name">SHOTGUN</div>
+                    <div class="second__list-price">300$</div>
+                    <div class="second__list-btn">
+                      <button type="button">დამზადება</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          <div id="4" class="tabs-content active-tab">
+            <form>
+              <div class="first__item content__item">
+                <img class="first__item-img" src="images/icons/icon-4.png" alt="">
+                <div class="first__item-box">
+                  <p class="first__item-text">500M</p>
+                  <button class="first__item-btn" type="button">ყიდვა</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="5" class="tabs-content">
+            <form>
+              <div class="third__item content__item">
+                <p class="third__item-title">პისტოლეტის ტყვიები</p>
+                <div class="third__item-content">
+                  <div class="third__item-slider">
+                    <input id="first-value" class="range-slider" data-min="0" data-max="100" data-from="60"
+                      type="text" />
                   </div>
-                </li>
-              </ul>
-              <ul class="second__list">
-                <li class="second__list-item">
-                  <div class="second__list-name">PISTOL</div>
-                  <div class="second__list-price">200$</div>
-                  <div class="second__list-btn">
-                    <button type="submit">დამზადება</button>
+                  <span class="third__item-label" id="first-value-label">60</span>
+                  <div class="third__item-btn">
+                    <button type="button">შექმნა</button>
                   </div>
-                </li>
-              </ul>
-              <ul class="second__list">
-                <li class="second__list-item">
-                  <div class="second__list-name">PISTOL</div>
-                  <div class="second__list-price">200$</div>
-                  <div class="second__list-btn">
-                    <button type="submit">დამზადება</button>
-                  </div>
-                </li>
-              </ul>
-              <ul class="second__list">
-                <li class="second__list-item">
-                  <div class="second__list-name">PISTOL</div>
-                  <div class="second__list-price">200$</div>
-                  <div class="second__list-btn">
-                    <button type="submit">დამზადება</button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div> -->
-          <div id="tab-5" class="tabs-content">
-            <div class="third__item content__item">
-              <p class="third__item-title">პისტოლეტის ტყვიები</p>
-              <div class="third__item-content">
-                <div class="third__item-slider">
-                  <input id="first-value" class="range-slider" data-min="0" data-max="100" data-from="60" type="text"/>
                 </div>
-                <span class="third__item-label" id="first-value-label">60</span>
-                <div class="third__item-btn">
-                  <button type="submit">შექმნა</button>
+                <p class="third__item-title">SMG ტყვიები</p>
+                <div class="third__item-content">
+                  <div class="third__item-slider">
+                    <input id="second-value" class="range-slider" data-min="0" data-max="100" data-from="100"
+                      type="text" />
+                  </div>
+                  <span class="third__item-label" id="second-value-label">100</span>
+                  <div class="third__item-btn">
+                    <button type="button">შექმნა</button>
+                  </div>
+                </div>
+                <p class="third__item-title">SHOTGUN ტყვიები</p>
+                <div class="third__item-content">
+                  <div class="third__item-slider">
+                    <input id="third-value" class="range-slider" data-min="0" data-max="100" data-from="45"
+                      type="text" />
+                  </div>
+                  <span class="third__item-label" id="third-value-label">45</span>
+                  <div class="third__item-btn">
+                    <button type="button">შექმნა</button>
+                  </div>
                 </div>
               </div>
-              <p class="third__item-title">SMG ტყვიები</p>
-              <div class="third__item-content">
-                <div class="third__item-slider">
-                  <input id="second-value" class="range-slider" data-min="0" data-max="100" data-from="100" type="text"/>
-                </div>
-                <span class="third__item-label" id="second-value-label">100</span>
-                <div class="third__item-btn">
-                  <button type="submit">შექმნა</button>
-                </div>
-              </div>
-              <p class="third__item-title">SHOTGUN ტყვიები</p>
-              <div class="third__item-content">
-                <div class="third__item-slider">
-                  <input id="third-value" class="range-slider" data-min="0" data-max="100" data-from="45" type="text"/>
-                </div>
-                <span class="third__item-label" id="third-value-label">45</span>
-                <div class="third__item-btn">
-                  <button type="submit">შექმნა</button>
-                </div>
-              </div>
-            </div>
-          </div> 
+            </form>
+          </div>
         </div>
+        <button class="close-menu btn" type="button">მენიუს დახურვა</button>
       </div>
     </div>
   </main>
